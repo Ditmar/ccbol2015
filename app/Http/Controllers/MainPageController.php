@@ -1,15 +1,14 @@
 <?php
-
 namespace App\Http\Controllers;
 
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
-
-abstract class Controller extends BaseController
+class MainPageController extends BaseController
 {
-    public function getIndex()
-    {
-    	return "HOLA";
-    }
+	
+	public function index()
+	{
+		return View("welcome",array("data"=>5));
+	}
 }
