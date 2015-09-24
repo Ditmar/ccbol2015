@@ -8,15 +8,17 @@ use App\Http\Controllers\Controller;
 
 class Usuarios extends Controller
 {
-    /**
+    /**l6
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
+    
     public function index()
     {
         //
-        return "principal";
+
+        return View("welcome");
     }
 
     /**
@@ -48,7 +50,7 @@ class Usuarios extends Controller
      */
     public function show($id)
     {
-        //
+        
     }
 
     /**

@@ -12,3 +12,4 @@
 */
 
 Route::get('/',"Usuarios@index");
+Route::get('/lista/{otro}/{id}/',"Usuarios@show");

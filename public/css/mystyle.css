@@ -1,0 +1,14 @@
+
+.btn_lateral {
+	position: fixed;
+	right: 0px;
+	/*margin-top: 400px;*/
+	text-decoration: none;
+	border: 0px;
+	z-index: 5;
+}
+
+
+#wowslider-container1{
+	z-index: 3;
+}
