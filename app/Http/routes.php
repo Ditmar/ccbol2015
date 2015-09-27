@@ -11,5 +11,5 @@
 |
 */
 
-Route::get('/',"Usuarios@index");
-Route::get('/lista/{otro}/{id}/',"Usuarios@show");
+Route::get('/',"MainPageController@index");
+Route::get('/expositores/',"Expositores@index");

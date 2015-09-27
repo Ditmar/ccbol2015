@@ -10,6 +10,6 @@ abstract class Controller extends BaseController
 {
     public function getIndex()
     {
-    	return "HOLA";
+    	
     }
 }

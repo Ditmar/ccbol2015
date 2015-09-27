@@ -24,7 +24,7 @@
     <script type="text/javascript" src="js/bootstrap.js"></script>
     
     <script type="text/javascript">if($(window).width()>1024){document.write("<"+"script src='js/jquery.preloader.js'></"+"script>");}  </script>
-
+    <script src="js/site.js"></script>
     <script>    
        jQuery(window).load(function() { 
        $x = $(window).width();    
@@ -53,33 +53,8 @@
       <div class="container clearfix">
         <div class="row">
           <div class="span12">
-            <div class="navbar navbar_">
-                <div class="container">
-                  <!-- LOGO -->
-                  <h1 class="brand brand_"><a href="index.html"><img src="img/logo_ccbol.jpg" width="225px"> </a></h1>
-
-                  <a class="btn btn-navbar btn-navbar_" data-toggle="collapse" data-target=".nav-collapse_">Menu <span class="icon-bar"></span> </a>
-                  <div class="nav-collapse nav-collapse_  collapse">
-                        <ul class="nav sf-menu">
-                      <li class="active"><a href="index.html">Inicio</a></li>
-                      <li><a href="expositores.html">Expositores</a></li>
-                      <li><a href="temas.html">Temas</a></li>
-                      <li><a href="horarios.html">Horarios</a></li>
-                      <li><a href="inscripciones.html">Inscripcion</a></li>
-                      <li><a href="organizacion.html">Organizacion</a></li>
-                      <li class="sub-menu"><a href="turismo.html">Turismo</a>
-                        <ul>
-                          <li><a href="#">Mapa satelital </a></li>
-                          <li><a href="#">Hoteles</a></li>
-                          <li><a href="#">Turismo</a></li>
-                        </ul>
-                      </li>
-                      <!--<li><a href="contacto.html">Contacto</a></li>-->
-                      <li><a href="login.html">Login</a></li>
-                    </ul>
-                  </div>
-              </div>
-            </div>
+            <!--============ MENU PRINCIPAL ARCHIVO mainmenu.blade.php ====-->
+            @include("mainmenu")
           </div>
         </div>
       </div>
@@ -139,7 +114,7 @@
       <div class="ic">More Website Templates @ TemplateMonster.com. November19, 2012!</div>
     <div class="row-1">
           <div class="container"> 
-            @yield("content")
+            @yield('content')
           </div>
     </div>
 

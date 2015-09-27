@@ -1,5 +1,6 @@
 @extends('layout')
 @section('content')
+<input type="hidden" value="{{$menu}}" id="menuSelection"/>
 <div class="row">
 <script>
     jQuery(document).ready(function($) {
