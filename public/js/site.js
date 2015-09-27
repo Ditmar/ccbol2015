@@ -2,6 +2,7 @@
 //Modulos desarrollados a partir de jquery
 
 //variable global que define en que vista se encuentra el usuario
+//teniendo en cuenta la vista cargada por medio de un controlador
 $donde_estoy="principal";
 
 jQuery(document).ready(function($) {
@@ -9,8 +10,8 @@ jQuery(document).ready(function($) {
 	setCssSelectClass();
 	$("#mainmenu li").each(function(index, el) {
 		$(el).click(function(event) {
-			event.preventDefault();
-			alert(donde_estoy);
+			//event.preventDefault();
+			//alert(donde_estoy);
 		});
 	});
 });
